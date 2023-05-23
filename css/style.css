@@ -1,0 +1,193 @@
+@import url(./framework.css);
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../assets/font/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Pangolin;
+    src: url("../assets/font/Pangolin-Regular.ttf");
+}
+
+body {
+    color: white;
+    font-family: Montserrat;
+    background-image: url(../assets/image/bg-concert.png);
+    background-size: cover;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 67vh;
+    width: 75vw;
+    grid-row-gap: 5vh;
+    grid-column-gap: 2vw;
+}
+
+
+/**************************** HEADER ****************************/
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.header-logo a{
+    gap: 0.3vw;
+}
+.header-logo img{
+    height: 8vh;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 8px black;
+}
+.header-logo p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header nav{
+    height: 100%;
+}
+header ul {
+    gap: 4vw;
+}
+header li{
+    font-size: 1rem;
+}
+
+.header-right {
+    justify-content: right;
+    gap: 0.5vw;
+}
+.header-right_links img{
+    width: 2vw;
+    cursor: pointer;
+}
+.header-right_ticket-button {
+    padding: 2vh 2vw;
+    background: linear-gradient(to right, red, orangered, rgb(255, 123, 0));
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 8px black;
+}
+
+
+/**************************** LEFT ****************************/
+
+.left {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.left-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.left-big-title {
+    font-size: 7rem;
+}
+
+.left-text {
+    line-height: 1.7rem;
+    font-weight: 500;
+}
+
+.left-ticket-button-container {
+    width: 100%;
+    justify-content: left;
+    margin-top: 3.5vh;
+    position: relative;
+}
+.left-ticket-button {
+    padding: 2.5vh 2vw;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.left-ticket-button-details {
+    padding: 2.5vh 2vw;
+    border: 2px solid white;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    bottom: 1vh;
+    left: -1vh;
+}
+
+
+/**************************** RIGHT ****************************/
+
+.right {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    box-shadow: 1px 3px 6px black;
+}
+
+.right-top-bar {
+    height: 1vh;
+    background-color: rgb(48, 48, 48);
+    box-shadow: 0 1px 6px black;
+}
+
+.right-timer {
+    background-color: rgba(73, 73, 73, 0.252);
+    height: 55%;
+    gap: 5vh;
+}
+.timer-container {
+    gap: 2.3vw;
+}
+#timer-j, #timer-h, #timer-m, #timer-s {
+    font-size: 4rem;
+    font-weight: 650;
+}
+.right-date {
+    font-size: 1.8rem;
+    font-weight: 650;
+}
+
+.right-info {
+    background-color: rgb(49, 49, 49);
+    height: 20%;
+}
+.right-info-icon img {
+    background-color: rgb(69, 69, 69);
+    padding: 1vh;
+    height: 1.5rem;
+    margin-right: 0.5vw;
+    border-radius: 50%;
+}
+.seats {
+    border-right: 2px solid rgb(59, 59, 59);
+    padding-right: 2vw;
+}
+.speakers {
+    border-left: 2px solid rgb(59, 59, 59);
+    padding-left: 2vw;
+}
+.seats p span, .speakers p span {
+    font-size: 0.7rem;
+}
+
+.right-sponsors {
+    background: linear-gradient(to right, red, orangered, orangered, rgb(255, 123, 0));
+    height: 35%;
+    gap: 3vh;
+    
+}
+.right-sponsors span {
+    font-size: 4rem;
+    font-family: Pangolin;
+}
+
+.right-footer {
+    background-color: white;
+    color: black;
+    height: 7%;
+}

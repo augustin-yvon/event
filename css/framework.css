@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+}
+a{ 
+    text-decoration: none;
+    color: white;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    list-style-type: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.bold{ font-weight: bold;}
+
+.flex{ display: flex; }
+
+.flex1{ flex: 1; }
+.flex2{ flex: 2; }
+.flex3{ flex: 3; }
+.flex4{ flex: 4; }
+
+.fdc{ flex-direction: column; }
+
+.jcc{ justify-content: center; }
+.aic{ align-items: center; }
